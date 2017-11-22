@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			<title> Inventario - Inicio</title>
+			<link href="Senai.ico" rel="shortcut icon" type="image/x-icon"/>
+			<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.links{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	display: flex;
+}
+.links label{
+	padding: 10px 0;
+	flex-grow: 1;
+	cursor: pointer;
+	transition: all .3s;
+	text-align: center;
+	font-family: 'Arial'
+	font-size: 100%;
+	color: #fff;
+}
+.links a{
+	padding: 10px 0;
+	flex-grow: 1;
+	cursor: pointer;
+	transition: all .3s;
+	text-align: center;
+	font-family: 'Arial Black'
+	font-size: 100%;
+	color: #fff;
+}
+}
+.links label:hover{
+	background-color: rgba(255,255,255,.2);
+}
+
+.scroll input{
+	display: none;
+}
+
+.bloco{
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.bloco img{
+	width: 40%;
+}
+#sass{
+	background-color: #680055;
+}
+#ruby{
+	background-color: #aaa;
+}
+#angular{
+	background-color: #414950;
+}
+
+.scroll{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden; 
+}
+.sections{
+	transition: all .3s;
+}
+#rd_projeto:checked ~ .sections{
+	margin-top: -100vh;
+}
+#rd_escola:checked ~ .sections{
+	margin-top: -200vh;
+}
+#rd_login:checked ~ .sections{
+	margin-top: 0vh;
+}
+
+			</style>
+	</head>
+<body>
+
+<nav class="links">
+	<label for="rd_bemvindo">Bem-Vindo ao Inventário</label>
+	<label for="rd_projeto">O projeto</label>
+	<label for="rd_escola">A escola</label>
+	<a href="Login.html">Login</a>
+</nav>	
+
+<div class="scroll">
+	<input type="radio" name="grupo" id="rd_bemvindo" checked="true">
+	<input type="radio" name="grupo" id="rd_projeto">
+	<input type="radio" name="grupo" id="rd_escola">
+	<input type="radio" name="grupo" id="rd_login">
+
+<section class="sections">
+	<section class="bloco" id="sass"><img src="senai-logo-roxo.jpg"></section>
+	
+	<section class="bloco" id="ruby"><img src="senai-logo-roxo.jpg"></section>
+	
+	<section class="bloco" id="angular"> <img src="senai-logo-roxo.jpg">
+					</section>
+
+
+
+</section>
+</div>
+
+</body>
+</html>
