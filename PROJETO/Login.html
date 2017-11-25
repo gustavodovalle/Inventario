@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Inventário - Login</title>
-	<link href="senai.ico" rel="shortcut icon" type="image/x-icon"/>
+	<link href="Senai.ico" rel="shortcut icon" type="image/x-icon"/>
 	<style>
 
 	*{
@@ -25,6 +25,13 @@
 	color:#FFF;
 	text-align: center;
 	padding-top: 45%;
+
+}
+.conteudo_esquerdo h2{
+	color:#FFF;
+	font: 'Arial';
+	text-align: center;
+	padding-top: 40%;
 
 }
 .conteudo_direito{
@@ -53,12 +60,15 @@
 	margin-bottom: 1em;
 }
 .formulario input[type="submit"]{
-	border:none;
-		background: #999;
+		width: 102%;
+		text-align: center;
+		border-radius: 8px; 
+		background: #000;
 		color: 	#fff;
 }
 .formulario input::placeholder{
 	text-align: center;
+	color: 	#000;
 }
 
 	</style>
@@ -66,20 +76,23 @@
 <body>
 <div class="conteudo_geral">
 	<div class="conteudo_esquerdo">
-		<H1>BEM VINDO AO INVENTÁRIO</H1>
+			
+			<H1>LOGIN - INVENTÁRIO</H1>
 	</div>
 	<div class="conteudo_direito">
 		<div class="logo">
 			<img src="senai-logo.jpg">
 		</div>
-		<form class="formulario" action="PerfilAdm.html" method="post">
+		<form class="formulario" action="login_post.cgi" method="post">
 			<input type="text" name="nome" placeholder="Digite seu nome de usuário">
 			<input type="password" name="senha" placeholder="Digite sua senha">
-			
-			<input type="submit" name="entrar" value="Entrar">
+		
+				<input type="submit" name="entrar" value="Entrar">
+		
 		
 		</form>
 	</div>
 </div>
 </body>
 </html>
+			
